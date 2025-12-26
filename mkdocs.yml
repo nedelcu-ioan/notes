@@ -1,0 +1,12 @@
+site_name: Notes
+site_url: https://nedelcu-ioan/github.io/notes/
+
+theme:
+  name: readthedocs
+
+plugins:
+  - search
+
+# This helps MkDocs understand where your markdown files are
+docs_dir: docs
+

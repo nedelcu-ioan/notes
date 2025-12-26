@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notes"
+version = "0.1.0"
+description = "My personal Markdown notes"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs==1.6.1",
+]
+
+[project.optional-dependencies]
+# Useful if you want to separate 'core' from 'extra' plugins
+dev = [
+    "mkdocs-minify-plugin",
+    "mkdocstrings[python]",
+]
+
+[tool.setuptools]
+py-modules = []
